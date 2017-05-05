@@ -7,7 +7,8 @@ var bodyParser = require('body-parser');
 var mongoose=require('mongoose');
 
 global.dbHandle=require("./dbbase/dbHandle.js");
-global.db=mongoose.connect("mongodb://localhost:27017/reactNote");
+global.db=mongoose.connect("mongodb://jack:jj1234@ds131621.mlab.com:31621/reactnote");
+//global.db=mongoose.connect("mongodb://localhost:27017/reactNote");
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
